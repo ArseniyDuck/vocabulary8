@@ -27,6 +27,11 @@ img {display: inline-block;}
    --purple: rgb(175, 146, 245);
 }
 
+::selection {
+   color: #FFF;
+   background: rgba(175, 146, 245, 0.35);
+}
+
 /* Styles ------------------------------------------------------------------------------------------------------------*/
 body {
    display: flex;
@@ -45,7 +50,7 @@ h1 {
 .wrapper {
    text-align: center;
    width: 300px;
-   padding:15px 20px 10px 20px;
+   padding: 15px 20px 10px 20px;
    border-radius: 10px;
    background: #999;}
 
