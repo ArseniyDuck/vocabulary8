@@ -499,6 +499,7 @@ const API = {
    },
 
    reset() {
+      delete this.vocabulary[this.currentWord.english]; // delete previous word
       this.currentWord = this.getRandomProperty();
       this.isAnswered = false;
       document.getElementById('english').innerText = this.currentWord.english;
